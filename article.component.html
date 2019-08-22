@@ -1,0 +1,33 @@
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<div class='container'>
+    <div class='row'>
+    <div class='col-md-6'>
+        <div class='jumbotron'>
+        <div class='value'>{{article.votes}} Points</div>
+        <div class='label'></div>
+        </div>
+    </div>
+    <div class='col-md-6'>
+        <div class='my-Link'>
+            <a class='btn btn-info' role='button' href='{{article.link}}'>{{article.title}}</a>
+            <ul class='voters list-unstyled'>
+                <li class='item'>
+                    <a href (click)='voteUp();'>
+                        <span class='glyphicon glyphicon-arrow-up'></span>
+                        Upvote
+                    </a>
+                </li>
+                <li class='item'>
+                    <a href (click)='voteDown();'>
+                        <span class='glyphicon glyphicon-arrow-down'></span>
+                        Downvote
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </div>
+</div>
